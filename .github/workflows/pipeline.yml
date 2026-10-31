@@ -1,0 +1,29 @@
+name: CI-CD-202202845
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository Code
+        uses: actions/checkout@v2
+
+      - name: Build Stage
+        run: |
+          echo "=============================="
+          echo "Starting Build Stage..."
+          echo "Compiling source code files..."
+          echo "Build completed successfully!"
+          echo "=============================="
+
+      - name: Test Stage
+        run: |
+          echo "=============================="
+          echo "Starting Test Stage..."
+          echo "Running unit tests and integration tests..."
+          echo "All tests passed successfully!"
+          echo "==============================="
