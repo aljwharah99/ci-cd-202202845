@@ -27,3 +27,4 @@ jobs:
           echo "Running unit tests and integration tests..."
           echo "All tests passed successfully!"
           echo "==============================="
+          exite 1
